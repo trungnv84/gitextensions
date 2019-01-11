@@ -43,16 +43,6 @@ xcopy /y /i ..\GitExtensions\bin\%Configuration%\System.ComponentModel.Primitive
 IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\System.ComponentModel.TypeConverter.dll GitExtensions\
 IF ERRORLEVEL 1 EXIT /B 1 
-xcopy /y /i ..\GitExtensions\bin\%Configuration%\System.Composition.AttributedModel.dll GitExtensions\
-IF ERRORLEVEL 1 EXIT /B 1 
-xcopy /y /i ..\GitExtensions\bin\%Configuration%\System.Composition.Convention.dll GitExtensions\
-IF ERRORLEVEL 1 EXIT /B 1 
-xcopy /y /i ..\GitExtensions\bin\%Configuration%\System.Composition.Hosting.dll GitExtensions\
-IF ERRORLEVEL 1 EXIT /B 1 
-xcopy /y /i ..\GitExtensions\bin\%Configuration%\System.Composition.Runtime.dll GitExtensions\
-IF ERRORLEVEL 1 EXIT /B 1 
-xcopy /y /i ..\GitExtensions\bin\%Configuration%\System.Composition.TypedParts.dll GitExtensions\
-IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\System.Console.dll GitExtensions\
 IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\System.Data.Common.dll GitExtensions\
@@ -199,8 +189,6 @@ xcopy /y /i ..\GitExtensions\bin\%Configuration%\System.Threading.dll GitExtensi
 IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\System.Threading.Overlapped.dll GitExtensions\
 IF ERRORLEVEL 1 EXIT /B 1 
-xcopy /y /i ..\GitExtensions\bin\%Configuration%\System.Threading.Tasks.Dataflow.dll GitExtensions\
-IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\System.Threading.Tasks.dll GitExtensions\
 IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\System.Threading.Tasks.Parallel.dll GitExtensions\
@@ -226,21 +214,15 @@ IF ERRORLEVEL 1 EXIT /B 1
 
 REM Resources from dependencies
 echo "Resource libs"
-xcopy /y /i ..\GitExtensions\bin\%Configuration%\cs\Microsoft.VisualStudio.Composition.resources.dll GitExtensions\cs\
-IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\cs\Microsoft.VisualStudio.Threading.resources.dll GitExtensions\cs\
 IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\cs\Microsoft.VisualStudio.Validation.resources.dll GitExtensions\cs\
-IF ERRORLEVEL 1 EXIT /B 1 
-xcopy /y /i ..\GitExtensions\bin\%Configuration%\de\Microsoft.VisualStudio.Composition.resources.dll GitExtensions\de\
 IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\de\Microsoft.VisualStudio.Threading.resources.dll GitExtensions\de\
 IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\de\Microsoft.VisualStudio.Validation.resources.dll GitExtensions\de\
 IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\de\NBug.resources.dll GitExtensions\de\
-IF ERRORLEVEL 1 EXIT /B 1 
-xcopy /y /i ..\GitExtensions\bin\%Configuration%\es\Microsoft.VisualStudio.Composition.resources.dll GitExtensions\es\
 IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\es\Microsoft.VisualStudio.Threading.resources.dll GitExtensions\es\
 IF ERRORLEVEL 1 EXIT /B 1 
@@ -250,21 +232,15 @@ xcopy /y /i ..\GitExtensions\bin\%Configuration%\es-MX\NBug.resources.dll GitExt
 IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\fi-FI\NBug.resources.dll GitExtensions\fi-FI\
 IF ERRORLEVEL 1 EXIT /B 1 
-xcopy /y /i ..\GitExtensions\bin\%Configuration%\fr\Microsoft.VisualStudio.Composition.resources.dll GitExtensions\fr\
-IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\fr\Microsoft.VisualStudio.Threading.resources.dll GitExtensions\fr\
 IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\fr\Microsoft.VisualStudio.Validation.resources.dll GitExtensions\fr\
 IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\hr\NBug.resources.dll GitExtensions\hr\
 IF ERRORLEVEL 1 EXIT /B 1 
-xcopy /y /i ..\GitExtensions\bin\%Configuration%\it\Microsoft.VisualStudio.Composition.resources.dll GitExtensions\it\
-IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\it\Microsoft.VisualStudio.Threading.resources.dll GitExtensions\it\
 IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\it\Microsoft.VisualStudio.Validation.resources.dll GitExtensions\it\
-IF ERRORLEVEL 1 EXIT /B 1 
-xcopy /y /i ..\GitExtensions\bin\%Configuration%\ja\Microsoft.VisualStudio.Composition.resources.dll GitExtensions\ja\
 IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\ja\Microsoft.VisualStudio.Threading.resources.dll GitExtensions\ja\
 IF ERRORLEVEL 1 EXIT /B 1 
@@ -272,15 +248,11 @@ xcopy /y /i ..\GitExtensions\bin\%Configuration%\ja\Microsoft.VisualStudio.Valid
 IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\ja\NBug.resources.dll GitExtensions\ja\
 IF ERRORLEVEL 1 EXIT /B 1 
-xcopy /y /i ..\GitExtensions\bin\%Configuration%\ko\Microsoft.VisualStudio.Composition.resources.dll GitExtensions\ko\
-IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\ko\Microsoft.VisualStudio.Threading.resources.dll GitExtensions\ko\
 IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\ko\Microsoft.VisualStudio.Validation.resources.dll GitExtensions\ko\
 IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\ko-KR\NBug.resources.dll GitExtensions\ko-KR\
-IF ERRORLEVEL 1 EXIT /B 1 
-xcopy /y /i ..\GitExtensions\bin\%Configuration%\pl\Microsoft.VisualStudio.Composition.resources.dll GitExtensions\pl\
 IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\pl\Microsoft.VisualStudio.Threading.resources.dll GitExtensions\pl\
 IF ERRORLEVEL 1 EXIT /B 1 
@@ -410,15 +382,11 @@ xcopy /y /i ..\GitExtensions\bin\%Configuration%\Plugins\zh-Hant\Microsoft.Visua
 IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\Plugins\zh-Hant\Microsoft.VisualStudio.Services.WebApi.resources.dll GitExtensions\Plugins\zh-Hant\
 IF ERRORLEVEL 1 EXIT /B 1 
-xcopy /y /i ..\GitExtensions\bin\%Configuration%\pt-BR\Microsoft.VisualStudio.Composition.resources.dll GitExtensions\pt-BR\
-IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\pt-BR\Microsoft.VisualStudio.Threading.resources.dll GitExtensions\pt-BR\
 IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\pt-BR\Microsoft.VisualStudio.Validation.resources.dll GitExtensions\pt-BR\
 IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\pt-BR\NBug.resources.dll GitExtensions\pt-BR\
-IF ERRORLEVEL 1 EXIT /B 1 
-xcopy /y /i ..\GitExtensions\bin\%Configuration%\ru\Microsoft.VisualStudio.Composition.resources.dll GitExtensions\ru\
 IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\ru\Microsoft.VisualStudio.Threading.resources.dll GitExtensions\ru\
 IF ERRORLEVEL 1 EXIT /B 1 
@@ -426,19 +394,13 @@ xcopy /y /i ..\GitExtensions\bin\%Configuration%\ru\Microsoft.VisualStudio.Valid
 IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\ru-RU\NBug.resources.dll GitExtensions\ru-RU\
 IF ERRORLEVEL 1 EXIT /B 1 
-xcopy /y /i ..\GitExtensions\bin\%Configuration%\tr\Microsoft.VisualStudio.Composition.resources.dll GitExtensions\tr\
-IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\tr\Microsoft.VisualStudio.Threading.resources.dll GitExtensions\tr\
 IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\tr\Microsoft.VisualStudio.Validation.resources.dll GitExtensions\tr\
 IF ERRORLEVEL 1 EXIT /B 1 
-xcopy /y /i ..\GitExtensions\bin\%Configuration%\zh-Hans\Microsoft.VisualStudio.Composition.resources.dll GitExtensions\zh-Hans\
-IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\zh-Hans\Microsoft.VisualStudio.Threading.resources.dll GitExtensions\zh-Hans\
 IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\zh-Hans\Microsoft.VisualStudio.Validation.resources.dll GitExtensions\zh-Hans\
-IF ERRORLEVEL 1 EXIT /B 1 
-xcopy /y /i ..\GitExtensions\bin\%Configuration%\zh-Hant\Microsoft.VisualStudio.Composition.resources.dll GitExtensions\zh-Hant\
 IF ERRORLEVEL 1 EXIT /B 1 
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\zh-Hant\Microsoft.VisualStudio.Threading.resources.dll GitExtensions\zh-Hant\
 IF ERRORLEVEL 1 EXIT /B 1 
@@ -487,8 +449,6 @@ IF ERRORLEVEL 1 EXIT /B 1
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\PSTaskDialog.dll GitExtensions\
 IF ERRORLEVEL 1 EXIT /B 1
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\ResourceManager.dll GitExtensions\
-IF ERRORLEVEL 1 EXIT /B 1
-xcopy /y /i ..\GitExtensions\bin\%Configuration%\Microsoft.VisualStudio.Composition.dll GitExtensions\
 IF ERRORLEVEL 1 EXIT /B 1
 xcopy /y /i ..\GitExtensions\bin\%Configuration%\Microsoft.VisualStudio.Threading.dll GitExtensions\
 IF ERRORLEVEL 1 EXIT /B 1
