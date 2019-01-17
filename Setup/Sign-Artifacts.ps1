@@ -30,7 +30,7 @@ Submit-SigningRequest `
     -Force
 
 # extract signed artifacts to Signed folder
-if ($LastExitCode -eq 0) -and (Test-Path $combinedSigned)) {
+if (($LastExitCode -eq 0) -and (Test-Path $combinedSigned)) {
     Expand-Archive  -LiteralPath $combinedSigned -DestinationPath .\Signed
 
     # -------------------------------
